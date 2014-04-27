@@ -1,0 +1,17 @@
+{
+  "uuid": "423fb16b-9962-4607-8359-37b6bb7c0670",
+  "shortName": "pebble_overlay",
+  "longName": "pebble_overlay",
+  "companyName": "MakeAwesomeHappen",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
