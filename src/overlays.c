@@ -4,17 +4,13 @@
 #include <pebble.h>
 #include "ovlymgr.h"
 
-extern int foo ();
-
 int main ()
 {
   OverlayLoad (0);
-  foo();
+  APP_LOG(APP_LOG_LEVEL_DEBUG,"main 0 %d", foo());
   OverlayLoad (1);
-  foo();
-  OverlayLoad (2);
-  foo();
-
+  APP_LOG(APP_LOG_LEVEL_DEBUG,"main 1 %d", foo());
+  
   app_event_loop();
   
   return 0;

@@ -19,6 +19,7 @@ SECTIONS
         *(.text.*)
         *(.rodata)
         *(.rodata*)
+        *(.foo)
     } > APP
 
     .data :
@@ -33,14 +34,6 @@ SECTIONS
         *(.bss.*)
     } > APP
 
-    PROVIDE (foo = .);
-    OVERLAY : NOCROSSREFS
-    {
-      .foo_v0 { *(.s_foo_v0) }
-      .foo_v1 { *(.s_foo_v1) }
-      .foo_v2 { *(.s_foo_v2) }
-    }
-
     DISCARD :
     {
         libc.a ( * )
@@ -49,4 +42,3 @@ SECTIONS
         *(.eh_frame)
     }
 }
-

@@ -9,4 +9,5 @@
 /* Entry Points: */
 
 bool OverlayLoad   (unsigned long ovlyno);
-bool OverlayUnload (unsigned long ovlyno);
+
+int foo() __attribute__ ((section (".foo"))) ;

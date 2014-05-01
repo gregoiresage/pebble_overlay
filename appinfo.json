@@ -12,6 +12,17 @@
     "dummy": 0
   },
   "resources": {
-    "media": []
+    "media": [
+    {
+        "type": "raw",
+        "name": "FOO_BIN_0",
+        "file": "raw/out_0.bin"
+      },
+      {
+        "type": "raw",
+        "name": "FOO_BIN_1",
+        "file": "raw/out_1.bin"
+      }
+    ]
   }
 }
